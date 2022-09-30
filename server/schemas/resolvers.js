@@ -36,21 +36,21 @@ const resolvers = {
       const token = signToken(user);
       return {token, user};
     },
-    saveBook: async (parent, args, context) => {
+    saveBook: async (parent, {bookId}, context) => {
       if (context.user) {
         const updated = await User.findByIdAndUpdate(
           {_id: context.user._id},
-          {$addToSet:{ savedBooks: args.book._id}}
+          {$addToSet:{ savedBooks: bookId}}
         );
         return updated;
       }
       throw new AuthenticationError('You need to be logged in!');
     },
-    removeBook: async (parent, args, context) => {
+    removeBook: async (parent, {bookId}, context) => {
         if (context.user) {
         const updated = await User.findByIdAndUpdate(
           {_id: context.user._id},
-          {$pull:{ savedBooks: args.book._id}},
+          {$pull:{ savedBooks: bookId}},
           {new:true}
         );
         return updated;
