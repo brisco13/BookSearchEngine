@@ -1,10 +1,10 @@
-# React Portfolio 
+# Google Books List
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)    
 
 ## Description
 
-This is a project that showcases my web development projects, my resume, an about me, and a contact form. This project uses the Bootstrap CSS Library and EmailJS for the contact me page. It is built using React - please reach out if you have any questions or would like to connect!  
+This is a project that uses the MERN stack to allow users to access a repository of books via Google Books and add the books to their saved books list!  
 
 ## Table of Contents
 
@@ -24,15 +24,9 @@ This project is licensed under the MIT License .
 ---
 
 ## Features: 
-This application has 4 pages including an "About Me"
-![picture1](./pics/picture1.png "About Me")
-A "Portfolio" page
-![picture1](./pics/picture3.png "Portfolio")
-A "Contact Me" page
-![picture1](./pics/picture2.png "Contact Me")
-And a "Resume" page
-![picture1](./pics/picture4.png "Resume")
+This application has the ability to have users add and remove books fromt he google books library to their saved books list. It requires a log on and is stored on a MongoDB
+
 ## Contact Me: 
 
-Please use the portfolio to contact me!
+Please reach out to me on github if you'd like to contact me!
  
